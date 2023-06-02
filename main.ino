@@ -18,7 +18,10 @@ void incPULSE() {
     if (fluxo > 0.5) {
         fluxo = 0;
         full = true;
+    } else {
+        full = false;
     }
+
 }
 
 void setup() {
