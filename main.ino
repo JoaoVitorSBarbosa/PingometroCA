@@ -34,13 +34,8 @@ void setup() {
 
 void loop() {
     delay(5);
-
     while ((hc.dist() < 10) && (!full)) {
-        Serial.println(" ");
         digitalWrite(motor, HIGH);
-        Serial.println("Liga");
-        Serial.println(" ");
-        Serial.println(full);
     }
     digitalWrite(motor, LOW);
 }
